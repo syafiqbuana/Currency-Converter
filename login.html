@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      
+      <h2>Log In</h2>
+      <p class="subtitle">Currency Converter</p>
+
+      <!-- Login Form -->
+      <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Email or username" />
+        <input type="password" id="loginPassword" placeholder="Enter your password" />
+        <p id="loginError" class="error"></p>
+        <button type="submit">Login</button>
+        <p class="link" onclick="showRegister()">Create account</p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="registerForm" class="hidden">
+        <input type="text" id="registerUsername" placeholder="Choose a username" />
+        <input type="password" id="registerPassword" placeholder="Choose a password" />
+        <p id="registerError" class="error"></p>
+        <button type="submit">Register</button>
+        <p class="link" onclick="showLogin()">Already have an account?</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

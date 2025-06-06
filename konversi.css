@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image:url('abstract-digital-grid-black-background.jpg');
+    background-size: cover;
+}.container{
+    
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Untuk browser berbasis WebKit */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border semi-transparan */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek shadow lembut */
+
+}.container header{
+    color:white;
+    font-size:28px; 
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(to right,#fc72ff,#8f68ff,#487bff,#8f68ff,#fc72ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+    
+
+}@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
+}
+
+.container form{
+  margin: 40px 0 20px 0;
+
+}form p{
+    color:white;
+    font-size:18px;
+    margin-bottom: 5px ;
+}
+form:where(input,select,button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}select{
+    border: none;
+}
+form input{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border:1px solid #999;
+}form input:focus{
+    border: 2px solid #675AFE;
+    padding: 0 14px;  
+}form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}.drop-list .select-box{
+    /* background-color: transparent; */
+   display: flex; 
+   height: 45px;
+   width: 115px;
+   border: 1px solid #999;
+   border-radius: 5px;
+   align-items: center;
+   justify-content: center;
+}.select-box select{
+    width: auto;
+    cursor: pointer;
+    background: transparent;
+    color:white;
+    font-size: 16px;
+    margin:0 -5px 0 5px;
+    
+}
+/* .select-box option ::-webkit-scrollbar{
+    width: 8px;
+}.select-box option::-webkit-scrollbar-track{
+    background: white;
+}.select-box option::-webkit-scrollbar-thumb{
+    background:#888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+} */
+option{
+    color:black;
+}
+.select-box img{
+max-width: 25px;
+}.drop-list .icon{
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 30px;
+}.icon{
+    color: white;
+}
+form .exchange-rate{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 20px 0 30px;
+} form button{
+    height: 52px;
+    font-weight: 600;
+    color: white;
+    background:#675AFE;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.history {
+    margin-top: 20px;
+    color: white;
+    
+}
+
+.history h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.history ul li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#clear-history {
+    height: 40px;
+    font-weight: 600;
+    color: white;
+    background: #ff4d4d; /* Warna merah untuk tombol hapus */
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Jarak bawah tombol */
+}
+
+#clear-history:hover {
+    background: #ff1a1a; /* Warna merah lebih gelap saat hover */
+}
+
+.logout-btn {
+    position: fixed;
+    top: 25px;
+    right: 35px;
+    padding: 10px 22px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+.logout-btn:hover {
+    background: #ff1a1a;
+}
