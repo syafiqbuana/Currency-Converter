@@ -114,3 +114,23 @@ button:hover {
 .hidden {
   display: none;
 }
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 85%;
+    padding: 0 8px;
+  }
+  .card {
+    padding: 24px 10px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .logo {
+    width: 60px;
+  }
+  input, button {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

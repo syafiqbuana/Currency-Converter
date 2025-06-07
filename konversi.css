@@ -194,3 +194,41 @@ form .exchange-rate{
 .logout-btn:hover {
     background: #ff1a1a;
 }
+
+@media (max-width: 480px) {
+
+    
+  .container header {
+    font-size: 1.2rem;
+  }
+  .history ul{
+    max-height: 120px;
+    overflow: scroll;
+  }
+  form input, form button, #clear-history {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 8px;
+  }
+  .drop-list {
+    justify-content: center; 
+    gap: 10px; 
+  }
+  .drop-list .select-box {
+    width: 90px;
+    height: 38px;
+    margin: 0 5px; 
+  }
+  .select-box img {
+    max-width: 18px;
+  }
+  .history h2 {
+    font-size: 16px;
+  }
+  .logout-btn {
+    top: 10px;
+    right: 10px;
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}
